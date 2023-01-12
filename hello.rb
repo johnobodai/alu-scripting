@@ -72,7 +72,7 @@ b = [1, 3]
 res = a - b
 
 puts res[0]
-=end
+
 
 x = 8
 
@@ -83,3 +83,14 @@ y = 1
 x.times {y+=2}
 
 puts y
+=end
+
+arr = [5, 6, 8, 4]
+
+arr << 3
+
+arr.reverse!
+
+res = arr[2...4]
+
+puts res[1]
