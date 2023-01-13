@@ -1,5 +1,5 @@
 #!/usr/bin/env ruby
-str = ARGV
+str = ARGV[0]
 
 def mchtest(str)
   if str =~ /School/
