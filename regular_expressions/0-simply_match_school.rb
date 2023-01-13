@@ -1,10 +1,7 @@
 #!/usr/bin/env ruby
-str = ARGV[0]
 
-def mchtest(str)
-  if str =~ /School/
-    puts #{str}
+for arg in ARGV
+  if arg.match(/School/)
+    print "#{arg}"
   end
 end
-
-mchtest(str)
