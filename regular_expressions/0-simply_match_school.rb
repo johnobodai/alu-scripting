@@ -1,7 +1,2 @@
 #!/usr/bin/env ruby
-
-for arg in ARGV
-  if "#{arg}".match(/School/)
-    print "#{arg}".chomp
-  end
-end
+puts ARGV[0].scan(/Sch??l/).join
