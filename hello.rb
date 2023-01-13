@@ -83,7 +83,6 @@ y = 1
 x.times {y+=2}
 
 puts y
-=end
 
 arr = [5, 6, 8, 4]
 
@@ -94,3 +93,35 @@ arr.reverse!
 res = arr[2...4]
 
 puts res[1]
+
+t = {a:1, b:2, c:3, d:4}
+
+res = 0
+
+t.each {|x, y| res += y if y%2 != 0 }
+
+puts res
+
+arr = [5, 6, 8, 3]
+
+arr.reverse!
+
+arr[1].times {puts "in a loop"}
+=end
+
+def fib(num)
+
+  if num < 2
+
+    num
+
+  else
+
+    fib(num-1) + fib(num-2)
+
+  end
+
+end
+
+puts fib(4)
+
